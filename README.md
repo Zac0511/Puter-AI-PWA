@@ -23,7 +23,7 @@ If you want to create a Puter account, go to [puter.com](https://puter.com)
 ## Powered by Puter
 This app would not be possible without **Puter**.
 
-In case you don't know what is Puter, its like a web based operating system, like a computer in the cloud.
+In case you don't know what is Puter, its a web based operating system, like a computer in the cloud.
 
 And Puter have a SDK called **[Puter.js](https://docs.puter.com/)**, allowing any website to have access to AI functionnalities, and store files on the user's Puter PC. And Puter is open source too !
 
