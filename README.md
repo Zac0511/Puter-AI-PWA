@@ -41,5 +41,8 @@ In Puter, you can just right click a folder and publish it as a website, so that
 ### Microsoft Edge sidebar compatibility
 This PWA is compatible with the Edge sidebar, wich means you can have Puter AI directly in your sidebar.
 
+### Helped by PWA Builer
+The manifest file has been partially made by [PWA Builder](https://www.pwabuilder.com/), a website allowing user to easly creates a PWA's manifest file.
+
 ### Partially made by AI
 Some parts of this app are made by AI.
