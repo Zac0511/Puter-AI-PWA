@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /index-iframe.html
+Disallow: /index-puter.html
+Disallow: /icons/*
+Disallow: /shortcuts-icons/*

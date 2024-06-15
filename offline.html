@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<link rel="manifest" href="manifest.json" />
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puter AI</title>
+    <link rel="icon" type="image/vnd.icon" href="favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            flex-direction: column;
+        }
+
+        #reload-button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #reload-button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<p>It seems that you are not connected to the internet</p>
+<p>You need to be connected to the internet to talk with Puter AI</p>
+<p>Please reconnect to the internet to continue.</p>
+<p>Once you are reconnected to the internet, press the button below.</p>
+<button id="reload-button" onclick="window.location.href = 'index.html';">Reload</button>

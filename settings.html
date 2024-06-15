@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="manifest" href="manifest.json" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puter AI</title>
+    <link rel="icon" type="image/vnd.icon" href="favicon.ico">
+</script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            flex-direction: column;
+        }
+
+        #back-button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #back-button:hover {
+            background: #0056b3;
+        }
+
+        #login-button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #login-button:hover {
+            background: #0056b3;
+        }
+
+        #login-button:disabled {
+            background: #b8b8b8;
+        }
+
+        #logoff-button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #logoff-button:hover {
+            background: #0056b3;
+        }
+
+        #logoff-button:disabled {
+            background: #b8b8b8;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        #infos {
+            margin: 0 auto;
+        }
+    </style>
+    <script src="https://js.puter.com/v2/"></script>
+    <script src="account-settings.js"></script>
+</head>
+
+
+<button id="back-button" onclick="window.location.href = 'index.html';">Exit settings</button>
+<h1>Puter AI Settings</h1>
+<h2>Puter account settings</h2>
+<div>
+    <button id="login-button" onclick="puter.auth.signIn();">Log in a Puter account</button>
+    <button id="logoff-button" onclick="puter.auth.signOut();">Log out of your Puter account</button>
+</div>
+<div id="user-info">
+    <!-- User information -->
+</div>
+<div id="container">
+    <div id="infos">
+    <h3>Infos</h3>
+    <p>Puter AI PWA - v1.4.0</p>
+    <p>Made by Zac0511</p>
+    </div>
+</div>
