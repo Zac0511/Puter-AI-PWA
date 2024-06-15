@@ -4,7 +4,7 @@
 
 A PWA that allows you to easly talk with Puter's AI
 
-## Functionnalities
+## Functionalities 
 The Puter AI PWA allows you to easly talk with the **[Puter](https://github.com/HeyPuter/puter) artificial intelligence**, based on GPT 3.5 Turbo.
 
 It can talk multiple languages.
