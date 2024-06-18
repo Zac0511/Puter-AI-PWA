@@ -3,7 +3,7 @@ window.onload = function() {
     var loginButton = document.getElementById("login-button");
     var logoffButton = document.getElementById("logoff-button");
 
-    // Mise à jour du contenu des boutons et du texte d'informations
+    // Updated button content and information text
     function updateUserInfo() {
         puter.auth.getUser().then(function(user) {
             if (puter.auth.isSignedIn()) {
@@ -16,17 +16,17 @@ window.onload = function() {
                 userInfoDiv.innerHTML = "Not signed in a Puter account";
             }
         }).catch(function(error) {
-            // Gérer l'erreur en affichant un message approprié
+            // Handle the error by displaying an appropriate message
             loginButton.disabled = false;
             logoffButton.disabled = true;
             userInfoDiv.innerHTML = "Not signed in a Puter account";
         });
     }
 
-    // Appel de la fonction pour mettre à jour les informations utilisateur au chargement de la page
+    // Calling function to update user information on page load
     updateUserInfo();
 
-    // Ajout d'un écouteur d'événement pour les boutons de connexion et de déconnexion
+    // Added event listener for login and logout buttons
     loginButton.addEventListener("click", function() {
         puter.auth.signIn().then(updateUserInfo);
     });
@@ -34,9 +34,9 @@ window.onload = function() {
     logoffButton.addEventListener("click", function() {
         if (puter.auth.signOut && typeof puter.auth.signOut === 'function') {
             puter.auth.signOut();
-            window.location.href = 'settings.html'; // Redirige vers la page settings.html
+            window.location.href = 'settings.html'; // Refreshes the page
         } else {
-            console.error("La méthode puter.auth.signOut n'est pas définie ou n'est pas une fonction.");
+            console.error("The puter.auth.signOut method is not defined or is not a function.");
         }
     });
     
