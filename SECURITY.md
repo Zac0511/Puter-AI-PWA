@@ -2,7 +2,7 @@
 
 ## AI messages
 
-None of your messages are perpermanently stored on a server.
+None of your messages are permanently stored on a server.
 They are only locally saved in RAM for the chat history in app, and are deleted when exiting the app.
 
 ## Puter
