@@ -2,21 +2,21 @@
 
 ![Puter AI PWA logo](https://puter-ai.puter.site/icons/windows11/Square44x44Logo.targetsize-64.png)
 
-A PWA that allows you to easly talk with Puter's AI
+A PWA that allows you to easly talk to Puter's AI
 
 ## Functionalities 
-The Puter AI PWA allows you to easly talk with the **[Puter](https://github.com/HeyPuter/puter) artificial intelligence**, based on GPT 3.5 Turbo.
+The Puter AI PWA allows you to easly talk to the **[Puter](https://github.com/HeyPuter/puter) artificial intelligence**, based on GPT 3.5 Turbo.
 
-It can talk multiple languages.
+It can speak in multiple languages.
 
 ## Account
 Puter AI needs a **Puter account**.
 
 In case you don't have an account, just try to send a message, and you will be logged on a guest account.
 
-Each Puter accout have **1000 ai credits per month** (1 message = 1 credit)
+Each Puter accout gets **1000 ai credits per month** (1 message = 1 credit)
 
-**⚠️ Warning :** a guest account only have 100 credits. If you want to send a lot of messages, it is recommended to use a Puter account.
+**⚠️ Warning :** a guest accounts only have 100 credits. If you want to send a lot of messages, it is recommended to use a Puter account.
 
 If you want to use your already existing Puter account, or sign out, click the `Settings` button, then click `Log out of your Puter account`
 
