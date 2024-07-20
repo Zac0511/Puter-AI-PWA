@@ -460,17 +460,31 @@
   "screenshots": [
     {
       "src": "/screenshots/chat_box-pc.png",
-      "sizes": "1919x861",
+      "sizes": "2259x1270",
       "type": "image/png",
       "form_factor": "wide",
       "label": "The chat box"
     },
     {
+      "src": "/screenshots/settings-pc.png",
+      "sizes": "2259x1269",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "The settings"
+    },
+    {
       "src": "/screenshots/chat_box-phone.jpg",
-      "sizes": "720x1515",
+      "sizes": "720x1509",
       "type": "image/jpg",
       "form_factor": "narrow",
       "label": "The chat box"
+    },
+    {
+      "src": "/screenshots/settings-phone.jpg",
+      "sizes": "720x1517",
+      "type": "image/jpg",
+      "form_factor": "narrow",
+      "label": "The settings"
     }
   ],
   "dir": "auto",

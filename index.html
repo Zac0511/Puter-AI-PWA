@@ -7,12 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puter AI</title>
     <meta name="description"
-    content="Puter AI is an artificial intelligence powered by Puter. It can talks many languages like english, french, spanish, and many more !" />
+        content="Puter AI is an artificial intelligence powered by Puter. It can talks many languages like english, french, spanish, and many more !" />
     <link rel="icon" type="image/vnd.icon" href="favicon.ico">
     <script>console.log("Puter AI PWA started, ready to send messages.")</script>
+
+    <!-- Material Design Web CDN -->
+    <script type="importmap">
+        {
+            "imports": {
+                "@material/web/": "https://esm.run/@material/web/"
+            }
+        }
+    </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <!-- Noto Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Noto Sans', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -29,13 +51,13 @@
             margin: auto;
             background: white;
             border: 1px solid #ddd;
-            border-radius: 4px;
+            border-radius: 30px;
             padding: 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         #messages {
-            height: 300px;
+            height: 400px;
             overflow-y: auto;
             border-bottom: 1px solid #ddd;
             margin-bottom: 20px;
@@ -45,7 +67,7 @@
         .message {
             padding: 5px;
             margin: 5px 0;
-            border-radius: 4px;
+            border-radius: 10px;
             background: #2c7aef;
             color: white;
         }
@@ -62,66 +84,92 @@
 
         #chat-input {
             display: flex;
+            align-items: center;
         }
 
-        #chat-input input {
+        #chat-input md-outlined-text-field {
             flex-grow: 1;
-            padding: 10px;
             margin-right: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            max-width: 489px;
+            min-height: 78px;
+            max-height: 686px;
+            --md-filled-text-field-input-text-font: 'Noto Sans', sans-serif;
+            --md-filled-text-field-label-text-font: 'Noto Sans', sans-serif;
         }
 
-        #chat-input button {
+        #chat-input md-filled-button {
             padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+            height: 52px;
         }
 
-        #chat-input button:hover {
-            background: #0056b3;
+        md-filled-button,
+        md-outlined-button {
+            --mdc-theme-primary: #007bff;
+            --mdc-theme-on-primary: white;
+            font-family: 'Noto Sans', sans-serif;
         }
 
-        #settings-button {
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+        md-outlined-button {
+            margin-top: 20px;
         }
 
-        #settings-button:hover {
-            background: #0056b3;
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        :root {
+            --md-sys-color-primary: #007bff;
+            --md-sys-color-secondary: #007bffdc;
+            --md-ref-typeface-brand: 'Noto Sans';
+            --md-ref-typeface-plain: 'Noto Sans';
+        }
+
+        #icon-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
         }
     </style>
     <script src="https://js.puter.com/v2/"></script>
     <meta name="google-site-verification" content="Q71qMHrmXHVJS96xLobvU5PdXHzkR23IRRD6gykEZew" />
-
 </head>
-
 
 <body>
     <script>
         if (typeof navigator.serviceWorker !== 'undefined') {
-          navigator.serviceWorker.register('offline.js')
+            navigator.serviceWorker.register('offline.js')
         }
-      </script>      
+    </script>
     <div id="chat-container">
         <div id="messages"></div>
         <div id="chat-input">
-            <input type="text" id="input-message" placeholder="Type a message...">
-            <button onclick="sendMessage()">Send</button>
+            <md-outlined-text-field label="Message" placeholder="Type a message..." id="messageInput"
+                error-text="Please type a message" style="font-family: 'Noto Sans', sans-serif;"></md-outlined-text-field>
+            <md-filled-button id="sendButton" style="font-family: 'Noto Sans', sans-serif;">Send
+                <img slot="icon" src="icons/send.png" alt="Send Icon" />
+            </md-filled-button>
         </div>
     </div>
-    <button id="settings-button" onclick="window.location.href = 'settings.html';">Settings</button>
-    <p><a href="https://github.com/Zac0511/Puter-AI-PWA">GitHub</a></p>
+    <div id="icon-buttons">
+        <a href="settings.html">
+            <md-outlined-icon-button aria-label="Settings">
+                <md-icon class="material-icons">settings</md-icon>
+            </md-outlined-icon-button>
+        </a>
+        <a href="https://github.com/Zac0511/Puter-AI-PWA">
+            <md-outlined-icon-button aria-label="Github">
+                <md-icon class="material-icons">code</md-icon>
+            </md-outlined-icon-button>
+        </a>
+    </div>
     <p>Powered by <a href="https://puter.com">Puter</a></p>
 
-    <script>
+    <script type="module">
         const messages = [];
         function addMessage(msg, isUser) {
             const messagesDiv = document.getElementById("messages");
@@ -136,8 +184,9 @@
         }
 
         function sendMessage() {
-            const input = document.getElementById("input-message");
+            const input = document.querySelector("#messageInput");
             const message = input.value.trim();
+            console.log("Message sent to Puter AI");
             if (message) {
                 addMessage(message, true);
                 input.value = '';
@@ -147,6 +196,7 @@
                 puter.ai.chat(messages).then(response => {
                     addMessage(response, false);
                     messages.push(response.message);
+                    console.log("AI response received");
                 }).catch(error => {
                     console.error("AI response error:", error);
                 });
@@ -154,11 +204,15 @@
         }
 
         // Sends the message if enter is pressed
-        document.getElementById("input-message").addEventListener("keypress", function(event) {
+        document.querySelector("#messageInput").addEventListener("keypress", function (event) {
             if (event.key === "Enter") {
                 event.preventDefault();
                 sendMessage();
             }
+        });
+
+        document.querySelector('#sendButton').addEventListener('click', function () {
+            sendMessage();
         });
     </script>
 </body>

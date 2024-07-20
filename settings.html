@@ -8,9 +8,30 @@
     <title>Puter AI</title>
     <link rel="icon" type="image/vnd.icon" href="favicon.ico">
     <script>console.log("Settings ready. Ready to... set things i guess.")</script>
+
+    <!-- Material Design Web CDN -->
+    <script type="importmap">
+        {
+            "imports": {
+                "@material/web/": "https://esm.run/@material/web/"
+            }
+        }
+    </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <!-- Noto Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Noto Sans', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,53 +42,6 @@
             flex-direction: column;
         }
 
-        #back-button {
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        #back-button:hover {
-            background: #0056b3;
-        }
-
-        #login-button {
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        #login-button:hover {
-            background: #0056b3;
-        }
-
-        #login-button:disabled {
-            background: #b8b8b8;
-        }
-
-        #logoff-button {
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        #logoff-button:hover {
-            background: #0056b3;
-        }
-
-        #logoff-button:disabled {
-            background: #b8b8b8;
-        }
-
         #container {
             text-align: center;
         }
@@ -75,26 +49,54 @@
         #infos {
             margin: 0 auto;
         }
+
+        :root {
+            --md-sys-color-primary: #007bff;
+            --md-sys-color-secondary: #007bffdc;
+            --md-ref-typeface-brand: 'Noto Sans';
+            --md-ref-typeface-plain: 'Noto Sans';
+        }
+
+        md-button {
+            --mdc-theme-primary: #007bff;
+            --mdc-theme-on-primary: white;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        md-filled-button:disabled,
+        md-outlined-button:disabled {
+            --mdc-theme-primary: #b8b8b8;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
     </style>
     <script src="https://js.puter.com/v2/"></script>
     <script src="account-settings.js"></script>
 </head>
 
-
-<button id="back-button" onclick="window.location.href = 'index.html';">Exit settings</button>
-<h1>Puter AI Settings</h1>
-<h2>Puter account settings</h2>
-<div>
-    <button id="login-button" onclick="puter.auth.signIn();">Log in a Puter account</button>
-    <button id="logoff-button" onclick="puter.auth.signOut();">Log out of your Puter account</button>
-</div>
-<div id="user-info">
-    <!-- User information -->
-</div>
-<div id="container">
-    <div id="infos">
-    <h3>Infos</h3>
-    <p>Puter AI PWA - v1.4.1</p>
-    <p>Made by Zac0511</p>
+<body>
+    <md-filled-button id="back-button" onclick="window.location.href = 'index.html';">Exit settings</md-filled-button>
+    <h1>Puter AI Settings</h1>
+    <h2>Puter account settings</h2>
+    <div class="button-container">
+        <md-filled-button id="login-button" onclick="puter.auth.signIn();">Log in a Puter account</md-filled-button>
+        <md-filled-button id="logoff-button" onclick="puter.auth.signOut();">Log out of your Puter account</md-filled-button>
     </div>
-</div>
+    <div id="user-info">
+        <!-- User information -->
+    </div>
+    <div id="container">
+        <div id="infos">
+            <h3>Infos</h3>
+            <p>Puter AI PWA - v2.0.0</p>
+            <p>Made by Zac0511</p>
+        </div>
+    </div>
+</body>
+
+</html>
