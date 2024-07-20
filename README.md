@@ -47,4 +47,7 @@ This PWA is compatible with the Edge sidebar, wich means you can have Puter AI d
 The manifest file has been partially made by [PWA Builder](https://www.pwabuilder.com/), a website allowing user to easly creates a PWA's manifest file.
 
 ### Partially made by AI
-Some parts of this app are made by AI.
+Some parts of this app are made by the following AIs :
+
+- ChatGPT
+- Puter AI (yes really)
