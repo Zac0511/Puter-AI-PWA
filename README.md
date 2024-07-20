@@ -48,6 +48,3 @@ The manifest file has been partially made by [PWA Builder](https://www.pwabuilde
 
 ### Partially made by AI
 Some parts of this app are made by AI.
-
-## Try the beta version
-In case you want to try new and experimental features, you can try the beta version of the app wich is published at https://zac0511.github.io/Puter-AI-PWA/
