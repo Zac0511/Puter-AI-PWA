@@ -6,7 +6,7 @@
   "orientation": "any",
   "background_color": "#f0f0f0",
   "theme_color": "#f0f0f0",
-  "description": "Talk with Puter AI. It can talk many languages such as english, french, spanish and many others.",
+  "description": "Talk with Puter AI. It can speak in multiple languages, such as english, french, spanish and many others.",
   "icons": [
     {
       "src": "icons/windows11/SmallTile.scale-100.png",
