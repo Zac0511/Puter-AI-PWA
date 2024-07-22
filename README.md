@@ -23,7 +23,7 @@ If you want to use your already existing Puter account, or sign out, click the `
 If you want to create a Puter account, go to [puter.com](https://puter.com)
 
 ## Powered by Puter
-This app would not be possible without **Puter**.
+This app would not be possible without [**Puter**](https://github.com/HeyPuter/puter).
 
 In case you don't know what Puter is, it's a web-based operating system, like a computer in the cloud.
 
