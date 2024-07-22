@@ -29,6 +29,8 @@ In case you don't know what Puter is, it's a web-based operating system, like a 
 
 Puter has an SDK called **[Puter.js](https://docs.puter.com/)**, allowing any website to have access to AI functionalities, and store files on the user's Puter PC. And Puter is open source too !
 
+The Puter.js LLM is made with GPT 4o Mini, allowing the app to use a powerful AI.
+
 ## Other informations
 ### Special files
 The main app is the `index.html` file, but you might have noticed `index-iframe.html` and `index-puter.html`. Those are for the following reasons :
