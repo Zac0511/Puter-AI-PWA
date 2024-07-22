@@ -29,7 +29,7 @@ In case you don't know what Puter is, it's a web-based operating system, like a 
 
 Puter has an SDK called **[Puter.js](https://docs.puter.com/)**, allowing any website to have access to AI functionalities, and store files on the user's Puter PC. And Puter is open source too !
 
-The Puter.js LLM is made with GPT 4o Mini, allowing the app to use a powerful AI.
+The Puter.js LLM is made with GPT 4o Mini, allowing the app to use a powerful AI, for free.
 
 ## Other informations
 ### Special files
