@@ -134,6 +134,11 @@
             gap: 10px;
             margin-top: 20px;
         }
+
+        #loading-spinner {
+            display: none;
+            margin-top: 20px;
+        }
     </style>
     <script src="https://js.puter.com/v2/"></script>
     <meta name="google-site-verification" content="Q71qMHrmXHVJS96xLobvU5PdXHzkR23IRRD6gykEZew" />
@@ -155,11 +160,14 @@
             </md-filled-button>
         </div>
     </div>
+    <div id="loading-spinner">
+        <md-circular-progress indeterminate></md-circular-progress>
+    </div>
     <div id="icon-buttons">
         <md-outlined-icon-button aria-label="Settings" href="settings.html">
             <md-icon class="material-icons">settings</md-icon>
         </md-outlined-icon-button>
-         <md-outlined-icon-button aria-label="Github" href="https://github.com/Zac0511/Puter-AI-PWA">
+        <md-outlined-icon-button aria-label="Github" href="https://github.com/Zac0511/Puter-AI-PWA">
             <md-icon class="material-icons">code</md-icon>
         </md-outlined-icon-button>
     </div>
@@ -179,6 +187,15 @@
             messagesDiv.scrollTop = messagesDiv.scrollHeight;
         }
 
+        function toggleLoadingSpinner(show) {
+            const spinner = document.getElementById('loading-spinner');
+            if (show) {
+                spinner.style.display = 'block';
+            } else {
+                spinner.style.display = 'none';
+            }
+        }
+
         function sendMessage() {
             const input = document.querySelector("#messageInput");
             const message = input.value.trim();
@@ -186,15 +203,18 @@
             if (message) {
                 addMessage(message, true);
                 input.value = '';
+                toggleLoadingSpinner(true);
                 // Record the message in array of messages
                 messages.push({ content: message, role: 'user' });
                 // Call the AI chat function
                 puter.ai.chat(messages).then(response => {
                     addMessage(response, false);
                     messages.push(response.message);
+                    toggleLoadingSpinner(false);
                     console.log("AI response received");
                 }).catch(error => {
                     console.error("AI response error:", error);
+                    toggleLoadingSpinner(false);
                 });
             }
         }
