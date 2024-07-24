@@ -27,3 +27,6 @@ If applicable, add screenshots to help explain your problem.
 
 **Additional context**
 Add any other context about the problem here.
+
+**PWA version**
+> Go to the settings, and look at the version number on the page. Then, delete this line, and write your version number.
