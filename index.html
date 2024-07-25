@@ -175,6 +175,7 @@
 
     <script type="module">
         const messages = [];
+        
         function addMessage(msg, isUser) {
             const messagesDiv = document.getElementById("messages");
             const messageDiv = document.createElement("div");
@@ -196,9 +197,9 @@
             }
         }
 
-        function sendMessage() {
+        function sendMessage(message) {
             const input = document.querySelector("#messageInput");
-            const message = input.value.trim();
+            message = message || input.value.trim();
             console.log("Message sent to Puter AI");
             if (message) {
                 addMessage(message, true);
@@ -218,6 +219,19 @@
                 });
             }
         }
+
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Check for message in URL query params and send it if present
+        window.onload = function() {
+            const message = getQueryParam('message');
+            if (message) {
+                sendMessage(message);
+            }
+        };
 
         // Sends the message if enter is pressed
         document.querySelector("#messageInput").addEventListener("keypress", function (event) {
