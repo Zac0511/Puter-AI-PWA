@@ -46,10 +46,6 @@ Material Design is open source, which is why it is used in this PWA.
 The only page of the website which does not use Material Design is `offline.html`. Why ? Material Design is on Google Server's, and this page is made to be saved locally, and showed to the user if he's offline, which needs to have an UI that works offline.
 
 ## Other informations
-### Special files
-The main app is the `index.html` file, but you might have noticed `index-iframe.html` and `index-puter.html`. Those are for the following reasons :
-* `index-iframe.html` is a modified version of `index.html`, **removing the settings button**, and replacing it with an "Open full app" button. Useful when integrating the app in a website.
-* `index-puter.html` is a modified version of `index.html`, **completly deleting** the settings button. Made for being in a Puter app.
 
 ### Hosting
 While this app is powered by Puter, it is also **hosted on Puter**!
