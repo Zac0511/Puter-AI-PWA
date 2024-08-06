@@ -215,6 +215,7 @@
                     console.log("AI response received");
                 }).catch(error => {
                     console.error("AI response error:", error);
+                    alert("An error occured, please try again.");
                     toggleLoadingSpinner(false);
                 });
             }
