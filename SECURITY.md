@@ -1,16 +1,37 @@
-# Puter AI PWA Security Policy
+# Privacy Policy - Puter AI PWA
 
-## AI messages
+## Your privacy is important to us.
 
-None of your messages are permanently stored on a server.
-They are only locally saved in RAM for the chat history in app, and are deleted when exiting the app.
+This privacy policy explains how we collect, use, and protect your information when you use the Puter AI PWA application.   
 
-## Puter
+## What data do we collect?
+**Our application does not collect any personal data directly**. You can use Puter AI PWA without creating an account. If you choose to create a Puter account, you will use your email address and username to identify yourself. This information is managed directly by Puter and is not stored on our servers.
 
-Some data is shared with **Puter**, since this app is powered by **Puter.js** :
-* The message you sent (not saved) : Temporarly saved on Puter's server to allow the AI to read your message and generate an answer. The message is deleted from the server once the AI answered.
-* Your Puter account (saved on Puter's server) : This app requires a Puter account to work, and Puter accounts are permanently saved on Puter's servers. If you want to delete your Puter account and all of the data, please go to [puter.com](https://puter.com), open the settings, and follow the instructions to delete your account.
+## How do we use this data?
 
-### More about Puter
+* **If you have an account**: The information linked to your Puter account is used by Puter to identify you and personalize your experience.
+* **If you do not have an account**: You can still use our application to chat with the AI. In this case, no personal data is collected.
 
-If you want to precisly know things about the security of Puter, please go to the [Puter repository](https://github.com/HeyPuter/puter) and read their Security Policy, or contact them.
+> [!NOTE]
+> The conversations you have with the AI are not stored. They are generated and processed in real-time and disappear when you close the application or refresh the page.
+
+## How do we protect your data?
+* **No storage of personal data**: Our application does not store any personal data about you, including the content of your conversations.
+* **Secure authentication (if applicable)**: If you choose to create an account, authentication is done through Puter's servers, which use standard security protocols to protect your login information.
+* **Secure transmission**: Communications between your device and Puter's servers are generally secured using the HTTPS protocol.
+
+## About Puter AI
+**Puter AI is a functionnality of the Puter website**. Our application uses the Puter API to interact with the AI, ensuring a seamless user experience. For more information about Puter's privacy practices, please consult their website.
+
+## In summary:
+
+* **Transparency**: We are transparent about the data we collect (none or very little, if you use an account).
+* **Security**: We use secure protocols and rely on the security measures implemented by Puter.
+* **Privacy**: Your privacy is our priority.
+
+> [!NOTE]
+> * Ephemeral nature of conversations: Conversations are generated on the fly and are not retained.
+> * User choice: It's up to you to decide if you want to create a Puter account.
+
+
+*This security policy is AI-generated*
