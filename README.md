@@ -17,7 +17,7 @@ The Puter AI PWA allows you to easily talk to the **[Puter](https://github.com/H
 It can speak in multiple languages.
 
 ## Account
-Puter AI needs a **Puter account**.
+Puter AI can be used with a **Puter account**.
 
 In case you don't have an account, just try to send a message, and you will be logged on to a guest account.
 
@@ -54,7 +54,7 @@ While this app is powered by Puter, it is also **hosted on Puter**!
 In Puter, you can just right-click a folder and publish it as a website, so that's how this is hosted.
 
 ### URL Parameters
-This PWA has the parameter `?message`. This means that if you type `https://puter-ai.puter.site/?message=hello how are you`, the message "hello how are you" will be sended when the app starts.
+This PWA has the parameter `?message`. This means that if you type `https://puter-ai.puter.site/?message=hello how are you`, the message "hello how are you" will be sent when the app starts.
 
 ### Microsoft Edge sidebar compatibility
 This PWA is compatible with the Edge sidebar, which means you can have Puter AI directly in your sidebar.
