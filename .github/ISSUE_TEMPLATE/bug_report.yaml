@@ -95,7 +95,7 @@ body:
   id: version
   attributes:
     label: PWA version
-    description: Type the version of the Puter AI PWA on which you encountered the bug
-    placeholder: Go to the settings, and look at the version number on the page, and copy & paste the version number here.
+    description: Type the version of the Puter AI PWA on which you encountered the bug (you can find it in the PWA'\s settings)
+    placeholder: Version number
   validations:
     required: true
