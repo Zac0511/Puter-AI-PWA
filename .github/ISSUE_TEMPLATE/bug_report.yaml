@@ -4,9 +4,8 @@ title: '[BUG]: <title> '
 labels: ["bug"]
 body:
 - type: markdown
-    attributes:
-      value:
-      "### Please fill this form to report the bug you encountered with the Puter AI PWA."
+  attributes:
+    value: "### Please fill this form to report the bug you encountered with the Puter AI PWA."
 - type: textarea
   id: description
   attributes:
@@ -92,7 +91,7 @@ body:
     description: Add any other context about the problem here.
   validations:
     required: false
-- type: imput
+- type: input
   id: version
   attributes:
     label: PWA version
