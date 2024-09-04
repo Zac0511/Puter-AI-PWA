@@ -5,8 +5,7 @@ labels: ["bug"]
 body:
 - type: markdown
     attributes:
-      value: |
-      Please fill this form to report the bug you encountered with the Puter AI PWA.
+      value: "Please fill this form to report the bug you encountered with the Puter AI PWA."
 - type: textarea
   id: description
   attributes:
