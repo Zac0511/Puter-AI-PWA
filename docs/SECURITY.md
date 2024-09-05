@@ -26,3 +26,5 @@ To protect user privacy, the Puter AI PWA does not store any conversation histor
 
 ### Conclusion
 While the Puter AI PWA itself has a limited attack surface, the security of the overall system is dependent on the security of the Puter API. By adhering to industry best practices and maintaining a strong focus on user privacy, we strive to provide a secure and reliable user experience. However, it's important to note that no system is entirely immune to security risks. Users are encouraged to practice good online hygiene and report any suspected vulnerabilities promptly.
+
+*This security policy is AI-generated, please create an issue if there is a problem with it*
