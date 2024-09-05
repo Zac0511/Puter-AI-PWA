@@ -34,4 +34,4 @@ This privacy policy explains how we collect, use, and protect your information w
 > * User choice: It's up to you to decide if you want to create a Puter account.
 
 
-*This security policy is AI-generated*
+*This privacy policy is AI-generated*
