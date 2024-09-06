@@ -66,5 +66,6 @@ The manifest file has been partially made by [PWA Builder](https://www.pwabuilde
 ### Partially made by AI
 Some parts of this app are made by the following AIs :
 
-- ChatGPT
+- [ChatGPT](https://chatgpt.com)
 - Puter AI (yes really)
+- [Gemini](https://gemini.google.com)
