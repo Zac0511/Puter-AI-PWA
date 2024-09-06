@@ -10,7 +10,7 @@ A PWA that allows you to easily talk to Puter's AI
 
 ![compact_46h](https://github.com/user-attachments/assets/8f0fdb87-66ec-440d-a6a3-c233c55580a2)
 
-[Privacy policy](https://github.com/Zac0511/Puter-AI-PWA/blob/main/docs/PRIVACY.md)
+[Privacy policy](https://github.com/Zac0511/Puter-AI-PWA/blob/main/docs/PRIVACY.md) - [Security policy](https://github.com/Zac0511/Puter-AI-PWA/blob/main/docs/SECURITY.md)
 
 ## Functionalities 
 The Puter AI PWA allows you to easily talk to the **[Puter](https://github.com/HeyPuter/puter) artificial intelligence**, based on GPT 4o Mini.
