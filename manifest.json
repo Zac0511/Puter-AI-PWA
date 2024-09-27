@@ -1,7 +1,7 @@
 {
   "name": "Puter AI",
   "short_name": "Puter AI",
-  "start_url": "/",
+  "start_url": "/index.html",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#f0f0f0",
