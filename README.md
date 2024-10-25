@@ -6,7 +6,9 @@ A PWA that allows you to easily talk to Puter's AI
 
 ![GitHub Release](https://img.shields.io/github/v/release/Zac0511/Puter-AI-PWA?label=latest%20version) ![GitHub repo size](https://img.shields.io/github/repo-size/Zac0511/Puter-AI-PWA) ![GitHub License](https://img.shields.io/github/license/Zac0511/Puter-AI-PWA)
 
-[![cozy_64h](https://github.com/user-attachments/assets/b6f66a23-d565-4945-ac14-3742b5754b02)](https://puter.com/app/ai-chat) 
+[![cozy_64h](https://github.com/user-attachments/assets/b6f66a23-d565-4945-ac14-3742b5754b02)](https://puter.com/app/ai-chat) <a href="https://puter-ai.puter.site?utm_source=github-repo">
+  <img src="https://chromeos.dev/badges/en/secondary.svg" alt="Add to Chromebook"/>
+</a>
 
 ![compact_46h](https://github.com/user-attachments/assets/8f0fdb87-66ec-440d-a6a3-c233c55580a2)
 
