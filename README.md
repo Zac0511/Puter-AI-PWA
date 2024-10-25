@@ -31,6 +31,19 @@ If you want to use your already existing Puter account, or sign out, click the `
 
 If you want to create a Puter account, go to [puter.com](https://puter.com)
 
+## Compatibility
+As the Puter AI PWA is a **progressive web app**, it is :
+* Installable and available as website on :
+  * Windows (chromium based browsers)
+  * MacOS (chromium based browsers)
+  * Linux (chromium based browsers)
+  * Android (Firefox, Chrome, Edge, Opera, and Samsung Internet)
+  * iOS (Safari, Chrome, Edge, Firefox, and Orion)
+* Only available as a website on :
+  * Browsers that don't support PWAs on desktop (such as Firefox and Safari)
+  * Consoles with a browser (PS4/PS5, Xbox One/Series)
+  * Any other device with a browser (Tesla, connected fridge, Android-powered TV, etc...)
+
 ## Powered by Puter
 This app would not be possible without [**Puter**](https://github.com/HeyPuter/puter).
 
