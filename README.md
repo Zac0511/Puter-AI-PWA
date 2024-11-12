@@ -61,7 +61,7 @@ This app's UI is powered by **Google Material Design V3**, a clean UI, with roun
 
 Material Design is open source, which is why it is used in this PWA.
 
-The only page of the website which does not use Material Design is `offline.html`. Why ? Material Design is on Google Server's, and this page is made to be saved locally, and showed to the user if he's offline, which needs to have an UI that works offline.
+The only page of the website which does not use Material Design is `offline.html`. Why ? Material Design's code is stored on Google's Server, and this page is made to be saved locally, and showed to the user if he's offline, which makes it need to have an UI that works offline.
 
 ## Other informations
 
