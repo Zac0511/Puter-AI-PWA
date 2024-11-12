@@ -39,7 +39,7 @@ As the Puter AI PWA is a **progressive web app**, it is :
   * Windows (chromium based browsers)
   * MacOS (chromium based browsers)
   * Linux (chromium based browsers)
-  * ChromeOS devices (Chromebooks, ChromeOS Flex)
+  * ChromeOS devices (Chromebooks, ChromeOS Flex, FydeOS)
   * Android (Firefox, Chrome, Edge, Opera, and Samsung Internet)
   * iOS (Safari, Chrome, Edge, Firefox, and Orion)
 * Only available as a website on :
