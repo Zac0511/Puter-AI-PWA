@@ -10,13 +10,12 @@ To protect user privacy, the Puter AI PWA does not store any conversation histor
 
 ### Security Measures
 * **Secure Communication:** All communication between the PWA and the Puter API is encrypted using HTTPS.
-* **Content Security Policy (CSP):** A strict CSP is enforced to mitigate cross-site scripting (XSS) and other injection attacks.
 * **Limited Input Validation:** While the PWA does not perform extensive input validation on text inputs, it relies on the Puter API's built-in safeguards to handle potentially malicious input.
 * **Dependency Management:** External dependencies, such as the Puter API, Google Material Design, and Noto Sans font, are sourced from trusted providers and kept up-to-date.
 * **No Local Storage of Sensitive Data:** The PWA avoids storing any sensitive data locally on the user's device. Temporary data, such as user preferences, is stored securely using browser mechanisms.
 
 ### Reporting Security Vulnerabilities
-* **Puter API Vulnerabilities:** To report security vulnerabilities related to the Puter API, please contact security@puter.com. 
+* **Puter API Vulnerabilities:** To report security vulnerabilities related to the Puter API, please contact [security@puter.com](mailto:security@puter.com). 
 * **PWA Vulnerabilities:** To report security vulnerabilities specific to the PWA itself, please use the "Report a vulnerability" button on the GitHub repository.
 
 ### User Responsibilities
