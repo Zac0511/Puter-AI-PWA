@@ -52,14 +52,12 @@ This app would not be possible without [**Puter**](https://github.com/HeyPuter/p
 
 In case you don't know what Puter is, it's a web-based operating system, like a computer in the cloud.
 
-Puter has an SDK called **[Puter.js](https://docs.puter.com/)**, allowing any website to have access to AI functionalities, and store files on the user's Puter PC. And Puter is open source too !
+Puter has an SDK called **[Puter.js](https://docs.puter.com/)**, allowing any website to have access to AI functionalities, and store files on the user's Puter filesystem. And Puter is open source too !
 
-The Puter.js LLM is made with GPT 4o Mini, allowing the app to use a powerful AI, for free.
+The Puter.js LLM is powered by GPT 4o Mini, allowing the app to use a powerful AI, for free.
 
 ## Google Material Design V3
 This app's UI is powered by **Google Material Design V3**, a clean UI, with rounded courners, etc...
-
-Material Design is open source, which is why it is used in this PWA.
 
 The only page of the website which does not use Material Design is `offline.html`. Why ? Material Design's code is stored on Google's Server, and this page is made to be saved locally, and showed to the user if he's offline, which makes it need to have an UI that works offline.
 
