@@ -2,6 +2,15 @@ window.onload = function() {
     var userInfoDiv = document.getElementById("user-info");
     var loginButton = document.getElementById("login-button");
     var logoffButton = document.getElementById("logoff-button");
+    var buttonContainer = document.querySelector(".button-container");
+    var userInfo = document.querySelector(".user-info");
+
+    // Check value for "puter.env" to remove login/logout buttons and display a message
+    if (puter.env === "app") {
+        buttonContainer.innerHTML = "PWA is running in a Puter app, cannot manage account settings";
+        userInfo.remove();
+        return;
+    }
 
     // Updated button content and information text
     function updateUserInfo() {
