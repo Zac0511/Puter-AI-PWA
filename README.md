@@ -63,11 +63,6 @@ The only page of the website which does not use Material Design is `offline.html
 
 ## Other informations
 
-### Hosting
-While this app is powered by Puter, it is also **hosted on Puter**!
-
-In Puter, you can just right-click a folder and publish it as a website, so that's how this is hosted.
-
 ### URL Parameters
 This PWA has the parameter `?message`. This means that if you type `https://puter-ai.puter.site/?message=hello how are you`, the message "hello how are you" will be sent when the app starts.
 

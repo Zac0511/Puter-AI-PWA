@@ -1,7 +1,7 @@
 {
   "name": "Puter AI",
   "short_name": "Puter AI",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#f0f0f0",
@@ -459,28 +459,28 @@
   ],
   "screenshots": [
     {
-      "src": "/screenshots/chat_box-pc.png",
+      "src": "screenshots/chat_box-pc.png",
       "sizes": "2259x1270",
       "type": "image/png",
       "form_factor": "wide",
       "label": "The chat box"
     },
     {
-      "src": "/screenshots/settings-pc.png",
+      "src": "screenshots/settings-pc.png",
       "sizes": "2259x1269",
       "type": "image/png",
       "form_factor": "wide",
       "label": "The settings"
     },
     {
-      "src": "/screenshots/chat_box-phone.jpg",
+      "src": "screenshots/chat_box-phone.jpg",
       "sizes": "720x1509",
       "type": "image/jpg",
       "form_factor": "narrow",
       "label": "The chat box"
     },
     {
-      "src": "/screenshots/settings-phone.jpg",
+      "src": "screenshots/settings-phone.jpg",
       "sizes": "720x1517",
       "type": "image/jpg",
       "form_factor": "narrow",
@@ -494,7 +494,7 @@
     "utilities"
   ],
   "id": "puter_ai",
-  "scope": "https://puter-ai.puter.site/",
+  "scope": "https://zac0511.github.io/Puter-AI-PWA/",
   "related_applications": [
     {
       "platform": "webapp",
@@ -510,7 +510,7 @@
       "description": "Chat with Puter AI",
       "icons": [
         {
-          "src": "/shortcuts-icons/chat.png",
+          "src": "shortcuts-icons/chat.png",
           "sizes": "96x96",
           "type": "image/png"
         }
@@ -522,7 +522,7 @@
       "description": "Manage Puter AI settings",
       "icons": [
         {
-          "src": "/shortcuts-icons/settings.png",
+          "src": "shortcuts-icons/settings.png",
           "sizes": "96x96",
           "type": "image/png"
         }
