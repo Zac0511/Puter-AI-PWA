@@ -85,6 +85,17 @@ body:
     default: 0
   validations:
     required: true
+- type: dropdown
+  id: type-version
+  attributes:
+    label: App type
+    description: Select the app type you were using when you encountered the bug
+    options:
+      - PWA / Website
+      - Puter app
+    default: 0
+  validations:
+    required: true
 - type: textarea
   id: additional_context
   attributes:
@@ -95,7 +106,7 @@ body:
 - type: input
   id: version
   attributes:
-    label: PWA version
+    label: Version
     description: Type the version of the Puter AI PWA on which you encountered the bug (you can find it in the PWA's settings)
     placeholder: Version number
   validations:
