@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="manifest" href="manifest.json" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puter AI</title>
+    <meta name="description"
+        content="Puter AI is an artificial intelligence powered by Puter. It can speak in multiple languages, like english, french, spanish, and many more !" />
+    <link rel="icon" type="image/vnd.icon" href="favicon.ico">
+    <script>console.log("User has requested a page that does not exists, displaying 404 page.")</script>
+
+    <!-- Material Design Web CDN -->
+    <script type="importmap">
+        {
+            "imports": {
+                "@material/web/": "https://esm.run/@material/web/"
+            }
+        }
+    </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+
+    <!-- Noto Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            flex-direction: column;
+        }
+
+        md-filled-button,
+        md-outlined-button {
+            --mdc-theme-primary: #007bff;
+            --mdc-theme-on-primary: white;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        md-outlined-button {
+            margin-top: 20px;
+        }
+
+        :root {
+            --md-sys-color-primary: #007bff;
+            --md-sys-color-secondary: #007bffdc;
+            --md-ref-typeface-brand: 'Noto Sans';
+            --md-ref-typeface-plain: 'Noto Sans';
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>404</h1>
+        <h2>Page not found</h2>
+        <p>Sorry, the page you are looking for is not available.</p>
+        <md-filled-button onclick="window.location.href = 'index.html'">Go to chat page</md-filled-button>
+    </div>
+</body>
