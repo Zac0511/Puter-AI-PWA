@@ -78,3 +78,4 @@ Some parts of this app are made by the following AIs :
 - [ChatGPT](https://chatgpt.com)
 - Puter AI (yes really)
 - [Gemini](https://gemini.google.com)
+- [GitHub Copilot](https://github.com/copilot/)
