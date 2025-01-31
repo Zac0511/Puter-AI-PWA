@@ -511,7 +511,7 @@
       "icons": [
         {
           "src": "shortcuts-icons/chat.png",
-          "sizes": "96x96",
+          "sizes": "384x384",
           "type": "image/png"
         }
       ]
@@ -523,7 +523,7 @@
       "icons": [
         {
           "src": "shortcuts-icons/settings.png",
-          "sizes": "96x96",
+          "sizes": "384x384",
           "type": "image/png"
         }
       ]
