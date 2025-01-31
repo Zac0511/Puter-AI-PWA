@@ -1,6 +1,6 @@
 # Puter-AI-PWA
 
-![Puter AI PWA logo](https://puter-ai.puter.site/icons/windows11/Square44x44Logo.targetsize-64.png)
+![Puter AI PWA logo](https://zac0511.github.io/Puter-AI-PWA/icons/windows11/Square44x44Logo.targetsize-64.png)
 
 A PWA that allows you to easily talk to Puter's AI
 
