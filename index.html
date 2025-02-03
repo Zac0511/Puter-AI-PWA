@@ -233,7 +233,7 @@
             ];
 
     // Call the AI chat function with the messages array
-    puter.ai.chat(messages, {stream: true})
+    puter.ai.chat(messages)
       .then(response => {
         addMessage(response, false); // Add AI response to chat history
         toggleLoadingSpinner(false); // Hide loading indicator
