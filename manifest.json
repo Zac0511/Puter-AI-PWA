@@ -495,13 +495,6 @@
   ],
   "id": "puter_ai",
   "scope": "https://zac0511.github.io/Puter-AI-PWA/",
-  "related_applications": [
-    {
-      "platform": "webapp",
-      "url": "https://puter.com/app/ai-chat",
-      "id": "app-42bc620b-d341-4183-a755-8e5c5e0f9207"
-    }
-  ],
   "prefer_related_applications": false,
   "shortcuts": [
     {
