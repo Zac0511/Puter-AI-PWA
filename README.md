@@ -24,11 +24,6 @@ Puter AI can be used with a **Puter account**.
 
 In case you don't have an account, just try to send a message, and you will be logged on to a guest account.
 
-Each Puter accout gets **3000 ai credits per month** (1 message = 1 credit)
-
-> [!WARNING]
-> Guest accounts only have 300 credits. If you want to send a lot of messages, it is recommended to use a Puter account.
-
 If you want to use your already existing Puter account, or sign out, click the `Settings` button, then click `Log out of your Puter account`.
 
 If you want to create a Puter account, go to [puter.com](https://puter.com).
