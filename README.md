@@ -59,7 +59,7 @@ The only page of the website which does not use Material Design is `offline.html
 ## Other informations
 
 ### URL Parameters
-This PWA has the parameter `?message`. This means that if you type `https://puter-ai.puter.site/?message=hello how are you`, the message "hello how are you" will be sent when the app starts.
+This PWA has the parameter `?message`. This means that if you type `https://puter-ai.app.zac0511.com/?message=hello how are you`, the message "hello how are you" will be sent when the app starts.
 
 ### Microsoft Edge sidebar compatibility
 This PWA is compatible with the Edge sidebar, which means you can have Puter AI directly in your sidebar.
