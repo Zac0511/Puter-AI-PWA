@@ -48,22 +48,6 @@ body:
     options:
       - Computer
       - Smartphone
-    default: 0
-  validations:
-    required: true
-- type: dropdown
-  id: operating_system
-  attributes:
-    label: Operating system
-    description: Select the operating system on which you encountered the bug
-    options:
-      - Windows
-      - MacOS
-      - Linux
-      - ChromeOS
-      - Android
-      - iOS
-      - FreeBSD
       - Other
     default: 0
   validations:
@@ -81,18 +65,7 @@ body:
       - Opera
       - Arc
       - Other chromium-based browser
-      - Other something-else-based browser
-    default: 0
-  validations:
-    required: true
-- type: dropdown
-  id: type-version
-  attributes:
-    label: App type
-    description: Select the app type you were using when you encountered the bug
-    options:
-      - PWA / Website
-      - Puter app
+      - Other non-chromium-based browser
     default: 0
   validations:
     required: true
