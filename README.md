@@ -15,7 +15,7 @@ A PWA that allows you to easily talk to Puter's AI
 [Privacy policy](https://github.com/Zac0511/Puter-AI-PWA/blob/main/docs/PRIVACY.md) - [Security policy](https://github.com/Zac0511/Puter-AI-PWA/blob/main/docs/SECURITY.md)
 
 ## Functionalities 
-The Puter AI PWA allows you to easily talk to the **[Puter](https://github.com/HeyPuter/puter) artificial intelligence**, based on GPT 4o Mini.
+The Puter AI PWA allows you to easily talk to the **[Puter](https://github.com/HeyPuter/puter) artificial intelligence**, that uses GPT 5 Nano.
 
 It can speak in multiple languages.
 
@@ -49,7 +49,7 @@ In case you don't know what Puter is, it's a web-based operating system, like a 
 
 Puter has an SDK called **[Puter.js](https://docs.puter.com/)**, allowing any website to have access to AI functionalities, and store files on the user's Puter filesystem. And Puter is open source too !
 
-The Puter.js LLM is powered by GPT 4o Mini, allowing the app to use a powerful AI, for free.
+The Puter.js LLM is powered by GPT 5 Nano, allowing the app to use a powerful AI, for free.
 
 ## Google Material Design V3
 This app's UI is powered by **Google Material Design V3**, a clean UI, with rounded courners, etc...
