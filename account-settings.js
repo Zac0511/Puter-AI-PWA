@@ -45,8 +45,8 @@ window.onload = function() {
         if (puter.auth.signOut && typeof puter.auth.signOut === 'function') {
             // If so, call the signOut method
             puter.auth.signOut();
-            // redirect to settings.html to refresh the page
-            window.location.href = 'settings.html'; // Refreshes the page
+            // After successful sign out, update the user information
+            updateUserInfo();
         } else {
             console.error("The puter.auth.signOut method is not defined or is not a function.");
         }
