@@ -44,7 +44,9 @@ window.onload = function() {
         // Check if the signOut method exists and is a function
         if (puter.auth.signOut && typeof puter.auth.signOut === 'function') {
             // If so, call the signOut method
-            puter.auth.signOut().then(updateUserInfo);
+            puter.auth.signOut();
+            // After successful sign out, update the user information
+            updateUserInfo();
         } else {
             console.error("The puter.auth.signOut method is not defined or is not a function.");
         }

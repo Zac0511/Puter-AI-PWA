@@ -142,6 +142,7 @@
         }
     </style>
     <script src="https://js.puter.com/v2/"></script>
+    <meta name="google-site-verification" content="Q71qMHrmXHVJS96xLobvU5PdXHzkR23IRRD6gykEZew" />
 </head>
 
 <body>
@@ -165,33 +166,17 @@
         <md-circular-progress indeterminate></md-circular-progress>
     </div>
     <div id="icon-buttons">
-        <md-outlined-icon-button aria-label="Settings" onclick="window.location.href='settings.html'">
+        <md-outlined-icon-button aria-label="Settings" href="settings.html">
             <md-icon class="material-icons">settings</md-icon>
         </md-outlined-icon-button>
-        <md-outlined-icon-button aria-label="Github" onclick="window.location.href='https://github.com/Zac0511/Puter-AI-PWA'">
+        <md-outlined-icon-button aria-label="Github" href="https://github.com/Zac0511/Puter-AI-PWA">
             <md-icon class="material-icons">code</md-icon>
         </md-outlined-icon-button>
     </div>
     <p>Powered by <a href="https://puter.com">Puter</a></p>
 
     <script type="module">
-        const chatHistory = [
-            {
-                // Gives the AI important info about how it needs to answer
-                role: 'system',
-                content: "You are the AI of a PWA named 'Puter AI PWA' developed by 'Zac0511'.The PWA is powered by Puter.js, allowing websites to use AI for free. You need to remember that Zac0511 is not the one who created you, he only made the PWA which interacts with you thanks to Puter.js, your creator is a company called 'Puter'. Puter is web based operating system, entirely running in the browser, its creators are only 3 persons, but the projects grows fast as its open source, and more 2000 users contributed to it (including Zac0511, the creator of this PWA). Puter.js is Puter's API, allowing websites to store files on the user's Puter filesystem, and access AI, which is why your creator is Puter. Your name is 'Puter AI'. Do NOT use Markdown formatting, the PWA in which you run doesn't support markdown."
-            },
-            {
-                // Complementary informations about Puter that the AI could need for some questions
-                role: 'system',
-                content: "The following is complementary informations about Puter: The URL to access Puter is 'https://puter.com'. Puter is web-based OS running entirely in the browser. You have been created by Puter. Puter was originally made by only 3 persons, but grows fast because it is open source. Puter has hundreds of thousands of users. The URL to join Puter's Discord server is 'https://discord.gg/PQcx7Teh8u'"
-            },
-            {
-                // Complementary informations about the Puter AI PWA
-                role: 'system',
-                content: "The following is complementary informations about the Puter AI PWA: The current version of the Puter AI PWA is version 2.2.3. The creator of the Puter AI PWA is 'Zac0511'. The Puter AI PWA can be installed on computer and mobile, but it can also be run (without being installed) on any device with a recent browser (such as computers, phones, consoles, TVs, etc...). The Puter AI PWA can be used without a Puter account, but the user will have less message credits. The user can check how many messages credits are left on his Puter account by opening Puter, clicking the Puter logo in the top left corner (it will open settings), clicking 'Usage' in the settings, and checking the bar named 'puter-chat-completion (complete):'. The Puter AI PWA is also available as a Puter app at the URL 'https://puter.com/app/ai-chat'. The UI of the Puter AI PWA is using Google Material Design V3. The PWA cannot be used offline, as the AI is stored on Puter servers (trying to open the app when offline will show a custom error message). If the user encounters any problem with the Puter AI PWA, or ask for a new feature, he can create an issue at the URL 'https://github.com/Zac0511/Puter-AI-PWA/issues/new/choose'."
-            }
-        ];
+        const messages = [];
         
         function addMessage(msg, isUser) {
             const messagesDiv = document.getElementById("messages");
@@ -225,29 +210,39 @@
 
                 toggleLoadingSpinner(true); // Show loading indicator
 
-                // Add user message to history
-                chatHistory.push({
-                    role: 'user',
-                    content: message
-                });
+            // Create messages array with context for the AI
+            const messages = [
+            {
+                // Gives the AI important info about how it needs to awnser
+                role: 'system',
+                content: "You are the AI of a PWA named 'Puter AI PWA' developed by 'Zac0511'.The PWA is powered by Puter.js, allowing websites to use AI for free. You need to remember that Zac0511 is not the one who created you, he only made the PWA which interacts with you thanks to Puter.js, your creator is a company called 'Puter'. Puter is web based operationg system, entierly running in the browser, its creators are only 3 persons, but the projects grows fast as its open source, and more 2000 users contributed to it (including Zac0511, the creator of this PWA). Puter.js is Puter's API, allwoing websites to store files on the user's Puter filesystem, and access AI, which is why your creator is Puter. Your name is 'Puter AI'. Do NOT use Markdown formatting, the PWA in which you run doesn't support markdown."
+            },
+            {
+                // Complementary informations about Puter that the AI could need for some questions
+                role: 'system',
+                content: "The following is complementary informations about Puter: The URL to access Puter is 'https://puter.com'. Puter is web-based OS running entierly in the browser. You have been created by Puter. Puter was originally made by only 3 persons, but grows fast because it is open source. Puter has hundreds of thousands of users. The URL to join Puter's Discord server is 'https://discord.gg/PQcx7Teh8u'"
+            },
+            {
+                // Complementary informations about the Puter AI PWA
+                role: 'system',
+                content: "The following is complementary informations about the Puter AI PWA: The current version of the Puter AI PWA is version 2.2.3. The creator of the Puter AI PWA is 'Zac0511'. The Puter AI PWA can be installed on computer and mobile, but it can also be runned (without being installed) on any device with a recent browser (such as computers, phones, consoles, TVs, etc...). The Puter AI PWA can be used without a Puter account, but the user will have less message credits. The user can check how many messages credits are left on his Puter account by opening Puter, clicking the Puter logo in the top left corner (it will open settings), clicking 'Usage' in the settings, and checking the bar named 'puter-chat-completion (complete):'. The Puter AI PWA is also available as a Puter app at the URL 'https://puter.com/app/ai-chat'. The UI of the Puter AI PWA is using Google Material Design V3. The PWA cannot be used offline, as the AI is stored on Puter servers (trying to open the app when offline will show a custom error message). If the user encounters any problem with the Puter AI PWA, or ask for a new feature, he can create an issue at the URL 'https://github.com/Zac0511/Puter-AI-PWA/issues/new/choose'."
+            },
+            {
+                role: 'user',
+                content: message // User's actual message
+            }
+            ];
 
-                // Call the AI chat function with the messages array
-                puter.ai.chat(chatHistory)
-                .then(response => {
-                    addMessage(response, false); // Add AI response to chat history
-
-                    // Add AI response to history
-                    chatHistory.push({
-                        role: 'assistant',
-                        content: response
-                    });
-
-                    toggleLoadingSpinner(false); // Hide loading indicator
-                    console.log("AI response received");
-                })
+    // Call the AI chat function with the messages array
+    puter.ai.chat(messages)
+      .then(response => {
+        addMessage(response, false); // Add AI response to chat history
+        toggleLoadingSpinner(false); // Hide loading indicator
+        console.log("AI response received");
+      })
       .catch(error => {
         console.error("AI response error:", error);
-        alert("An error occurred, please try again. If the error persists, please create an issue on the GitHub repository (you can access it by clicking the button with a 'code' icon)");
+        alert("An error occured, please try again. If the error persists, please create an issue on the GitHub repository (you can access it by clicking the button with a 'code' icon)");
         toggleLoadingSpinner(false); // Hide loading indicator in case of error
       });
   }
